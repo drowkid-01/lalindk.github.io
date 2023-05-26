@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0X9NQETX0"></script>
+      <h1 class="title">Generador de payloads</h1>
+      <form id="payloadForm">
+        <div class="input-container">
+          <label for="host">Host:</label>
+          <input type="text" id="host" name="host" required>
+          <br>
+          <br>
+          <label for="count">Cantidad:</label>
+          <input type="number" id="count" name="count" min="1" max="71" required>
+        </div>
+        <div class="output-container">
+          <div class="result-label">
+            <div class="form-group">
+              <input type="submit" value="Generar Payload">
+            </div>
+            <textarea id="payloadResult" rows="25" cols="50" readonly></textarea>
+          </div>
+          <button class="green-botn-save" id="downloadButton" disabled>Guardar</button>
+          <button class="custom-button">Volver al menu</button>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
